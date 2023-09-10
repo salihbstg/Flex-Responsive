@@ -1,0 +1,135 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    content: "";
+}
+
+html {
+    font-size: 10px;
+    font-family: 'Libre Baskerville', serif;
+    font-family: 'Lusitana', serif;
+    font-family: 'Oswald', sans-serif;
+}
+.clear::after{
+    content: "";
+    clear: both;
+    display: block;
+}
+#navBar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #202A44;
+}
+#navSol h1{
+    color:white;
+    margin-top: 1.2rem;
+}
+#navSol p{
+    color:white;
+    margin-bottom: 1.2rem;
+    letter-spacing: 1.5px;
+}
+#navSol h1::first-letter{
+   color: orange;
+   font-size: 2.2rem;
+}
+#navSag a{
+    text-decoration: none;
+    color: #cccccc;
+    margin-right: 4rem;
+    font-size: 1.3rem;
+}
+#navSag a:hover{
+    transition: 0.3s;
+    color: white;
+}
+#header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#row1 img{
+    width: 100%;
+    height: 100%;
+    border: 1px solid black;
+    padding: 1rem;
+    margin:2rem 0px;
+}
+#row2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+#row2 div{
+    width: 20%;
+    margin:0px 1.3rem;
+    background-color: #cccccc;
+}
+#row2 img{
+    width: 100%;
+}
+#row2 p,#row2 h1{
+    padding: 1.2rem 1rem 0px 1rem;
+    margin: 1rem;
+}
+#sect{
+    display: flex;
+    width: 60%;
+    justify-content: center;
+    padding-top: 1rem;
+    border-top: 1px solid black;
+    margin: 1rem auto;
+}
+#sect div{
+    width: 50%;
+}
+#sect img{
+    width: 100%;
+}
+#sect h1{
+    margin-bottom: 2rem;
+}
+p{
+    font-size: 1.6rem;
+}
+#navBar i{
+    display: none;
+}
+@media only screen and (max-width:800px) {
+    #navBar i{
+        display: block;
+    }
+    #navBar{
+        flex-direction: column;
+        align-items: baseline;
+    }
+    #navBar #baslik{
+        display: none;
+    }
+    #navSag a{
+        display: block;
+        padding: 5px 20px;
+        border-bottom: 1px solid white;
+        background-color:black;
+        color: white;  
+    }
+    #navSag a:hover{
+        background-color: white;
+        color: black;
+    }
+    #row2{
+        flex-direction: column;
+    }
+    #row2 div{
+        width: 100%;
+    }
+    #sect{
+        flex-direction: column;
+    }
+    #sect div{
+        width: 100%;
+    }
+}
